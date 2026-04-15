@@ -1,4 +1,4 @@
-iname: agentmail-slack
+name: agentmail-slack
 display_name: Agentmail-Slack
 description: >-
   Lives in Slack and turns conversation content into outbound emails
