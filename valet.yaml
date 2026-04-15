@@ -1,19 +1,18 @@
-name: agentmail-slack
-display_name: Agentmail-Slack
+name: linear-slack
+display_name: Linear-Slack
 description: >-
-  Lives in Slack and turns conversation content into outbound emails
-  sent via AgentMail. Always drafts in-thread and waits for explicit
-  user approval before sending.
+  Lives in Slack and turns conversation content into Linear issues.
+  Always drafts in-thread and waits for explicit user approval before
+  creating the issue.
 category: productivity
 connectors:
-  - catalog: agentmail
+  - catalog: linear-mcp-oauth
     description: >-
-      Gives the agent its own AgentMail inbox to draft and send emails
-      on the user's behalf.
-    slot_descriptions:
-      AGENTMAIL_API_KEY: AgentMail API key (from https://agentmail.to)
+      Connects the agent to Linear so it can list teams, draft issues,
+      and create them after user approval. Uses OAuth — no API token
+      required.
 channels:
   - catalog: slack
     description: >-
       The Slack workspace the agent listens in. Users chat with the
-      agent here to request, review, and approve outbound emails.
+      agent here to request, review, and approve Linear issues.
