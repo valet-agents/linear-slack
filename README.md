@@ -1,6 +1,6 @@
 # Linear Slack Drafter
 
-Lives in Slack and turns conversation content into [Linear](https://linear.app) issues. The agent drafts every issue in-thread and waits for explicit human approval before creating it — nothing lands in Linear without a review.
+Paste a message, review the draft in-thread, reply 'create' when it looks right — nothing lands in [Linear](https://linear.app) without your sign-off.
 
 ## Prerequisites
 - A [Linear](https://linear.app) workspace you can connect via OAuth
