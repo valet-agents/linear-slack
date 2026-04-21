@@ -1,5 +1,5 @@
 name: linear-slack
-display_name: Linear Slack Drafter
+display_name: Linear Slack
 description: >-
   Lives in Slack and turns conversation content into Linear issues.
   Always drafts in-thread and waits for explicit user approval before
@@ -16,13 +16,13 @@ story:
       body: "Drop a bug report, feature request, or note — anywhere the agent has been invited. Threads are fine too."
       catalog: slack
     - role: action
-      title: "Drafter writes the issue in-thread."
+      title: "The agent writes the issue in-thread."
       body: "Picks the team, writes a clean title and description, posts the full draft back for review."
-      catalog: linear-mcp-oauth
+      catalog: linear-mcp
     - role: outcome
       title: "You say 'create' — it files it."
       body: "Files the approved issue in Linear and posts the link back in-thread. Nothing lands without your sign-off."
-      catalog: linear-mcp-oauth
+      catalog: linear-mcp
 
 connectors:
   - catalog: linear-mcp
@@ -32,7 +32,7 @@ connectors:
       required.
     ui:
       headline: "Connect the Linear workspace you write into."
-      blurb: "One click authorizes the drafter to list teams and file approved issues. Nothing is created until you say 'create'."
+      blurb: "One click authorizes the agent to list teams and file approved issues. Nothing is created until you say 'create'."
       done_note: "Connected to your Linear workspace"
 
 channels:
@@ -41,6 +41,6 @@ channels:
       The Slack workspace the agent listens in. Users chat with the
       agent here to request, review, and approve Linear issues.
     ui:
-      headline: "Let the drafter listen in your Slack."
+      headline: "Let the agent listen in your Slack."
       blurb: "Pick the channel — or DM it. Paste a message, review the draft in-thread, reply 'create' when it's right."
       done_note: "Listening in the channel you invite it to"
