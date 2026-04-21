@@ -25,7 +25,7 @@ story:
       catalog: linear-mcp-oauth
 
 connectors:
-  - catalog: linear-mcp-oauth
+  - catalog: linear-mcp
     description: >-
       Connects the agent to Linear so it can list teams, draft issues,
       and create them after user approval. Uses OAuth — no API token
