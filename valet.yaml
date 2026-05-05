@@ -7,6 +7,9 @@ description: >-
 category: productivity
 author: Valet
 
+example:
+  prompt: "Turn this into a Linear ticket and assign it to Maya."
+
 story:
   hero: "Turn Slack messages into Linear issues — only after you approve."
   subheadline: "Paste a message, review the draft in-thread, reply 'create' when it looks right — nothing lands in Linear without your sign-off."
